@@ -98,17 +98,9 @@ Booking a trip to Edinburgh (just one scenario)
 
 Supporting Articles
 -------------------
-- [7 Steps to Your First Process with JBoss BPM Suite Starter Kit](http://www.schabell.org/2015/08/7-steps-first-process-jboss-bpmsuite-starter-kit.html)
+- [How to help the travel industry take bookings into the Cloud](http://www.schabell.org/2016/04/how-to-help-travel-industry-take-bookings-into-cloud.html)
 
 - [A Micro Services Migration Story with JBoss BPM Travel Agency](http://www.schabell.org/2015/05/micro-services-migration-story-with-jboss-bpm-travel-agency.html)
-
-- [Online Free PEX Webinar - A Guide to Modern BPM Tools](http://www.schabell.org/2015/04/online-free-pex-webinar-guide-to-modern-bpm-tools.html)
-
-- [Quickest Way into the Clouds with JBoss BPM Travel Agency](http://www.schabell.org/2015/02/into-clouds-with-jboss-bpm-travel-agency.html)
-
-- [Webinar - How to Excite the Travel Industry with a BPM Story](http://www.schabell.org/2015/02/webinar-how-to-excite-travel-industry.html)
-
-- [Slides from webinar - How to excite the travel industry with a BPM story](http://www.schabell.org/2015/02/slides-webinar-jboss-bpm-travel-agency.html)
 
 - [How to fly with the JBoss BPM Travel Agency (video 4 of 4)](http://www.schabell.org/2015/02/how-to-fly-with-jboss-bpm-travel-agency-part4.html)
 
@@ -117,10 +109,6 @@ Supporting Articles
 - [How to fly with the JBoss BPM Travel Agency (video 2 of 4)](http://www.schabell.org/2015/01/how-to-fly-with-jboss-bpm-travel-agency-part2.html)
 
 - [How to fly with the JBoss BPM Travel Agency (video 1 of 4)](http://www.schabell.org/2015/01/how-to-fly-with-jboss-bpm-travel-agency.html)
-
-- [Jump Start Your Rules, Events, Planning and BPM Today](http://www.schabell.org/2014/12/jump-start-rules-events-planning-bpm-today.html)
-
-- [3 Reasons You Need The New JBoss Travel Agency](http://www.schabell.org/2014/12/3-reasons-you-need-new-jboss-travel-agency.html)
 
 - [How To Excite the Travel Industry With a BPM Story](http://www.schabell.org/2014/10/how-to-excite-travel-agencies-with-bpm-story.html)
 
