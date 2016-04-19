@@ -1,0 +1,12 @@
+target/
+*.m4v
+.DS_Store
+RemoteSystemsTempFiles/
+.index/
+*.zip
+repository/
+.metadata/
+.settings/
+.project
+.classpath
+*.jar
