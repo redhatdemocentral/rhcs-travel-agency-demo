@@ -21,7 +21,7 @@ Install on Red Hat CDK OpenShift Enterprise image
 
 5. Run 'init.sh' or 'init.bat' file. 'init.bat' must be run with Administrative privileges.
 
-6. Login to JBoss BPM Suite to start exploring a travel agency booking project:
+6. Login to start exploring a travel agency booking project:
 
     [http://rhcs-travel-agency-demo.10.1.2.2.xip.io/business-central](http://rhcs-travel-agency-demo.10.1.2.2.xip.io/business-central)
     ( u:erics / p:bpmsuite1! )
