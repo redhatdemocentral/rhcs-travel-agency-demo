@@ -131,6 +131,10 @@ See the tagged releases for the following versions of the product:
 
 - v1.0 - JBoss BPM Suite 6.2.0-BZ-1299002 on JBoss EAP 6.4.4 with travel agency installed on Red Hat CDK using OpenShift Enterprise image. 
 
+![OSE Pod](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/rhcs-travel-agency-pod.png?raw=true)
+
+![OSE Build](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/rhcs-travel-agency-build.png?raw=true)
+
 [![Video part 1](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-1.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-1)
 
 [![Video part 2](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-2.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-2)
@@ -138,10 +142,6 @@ See the tagged releases for the following versions of the product:
 [![Video part 3](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-3.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-3)
 
 [![Video part 3](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-4.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-4)
-
-![Cloud Sign](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/cloud-sign.jpg?raw=true)
-
-![Digital Sign](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/announce-sign.jpg?raw=true)
 
 ![Agency Process](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/agency-process.png?raw=true)
 
