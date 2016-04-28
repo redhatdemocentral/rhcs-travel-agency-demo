@@ -117,19 +117,13 @@ Released versions
 -----------------
 See the tagged releases for the following versions of the product:
 
+- v1.1 - JBoss BPM Suite 6.2.0-BZ-1299002 on JBoss EAP 6.4.4 with travel agency process updates installed on Red Hat CDK using OpenShift Enterprise image. 
+
 - v1.0 - JBoss BPM Suite 6.2.0-BZ-1299002 on JBoss EAP 6.4.4 with travel agency installed on Red Hat CDK using OpenShift Enterprise image. 
 
 ![OSE Pod](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/rhcs-travel-agency-pod.png?raw=true)
 
 ![OSE Build](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/rhcs-travel-agency-build.png?raw=true)
-
-[![Video part 1](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-1.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-1)
-
-[![Video part 2](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-2.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-2)
-
-[![Video part 3](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-3.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-3)
-
-[![Video part 3](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-4.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-4)
 
 ![Agency Process](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/agency-process.png?raw=true)
 
@@ -140,4 +134,13 @@ See the tagged releases for the following versions of the product:
 ![Special Trips UI Form](https://raw.githubusercontent.com/redhatdemocentral/rhcs-travel-agency-demo/master/docs/demo-images/SpecialTripsUIform.png)
 
 ![Started Process](https://raw.githubusercontent.com/redhatdemocentral/rhcs-travel-agency-demo/master/docs/demo-images/started-process.png)
+
+[![Video part 1](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-1.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-1)
+
+[![Video part 2](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-2.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-2)
+
+[![Video part 3](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-3.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-3)
+
+[![Video part 3](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-4.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-4)
+
 
