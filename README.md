@@ -1,8 +1,8 @@
 App Dev Cloud with JBoss Travel Agency Demo
 ===========================================
-This demo is to install JBoss BPM Suite Mortgage Demo in the Cloud based on leveraging the Red Hat 
+This demo is to install JBoss BPM Travel Agency Demo in the Cloud based on leveraging the Red Hat 
 Container Development Kit (CDK) and the provided OpenShift Enterprise (OSE) image. 
-It delivers a fully functioning JBoss BPM Mortgage example containerized on OSE.
+It delivers a fully functioning JBoss BPM Travel Agency example containerized on OSE.
 
 This is an online employee travel booking process project. It contains multiple web services for looking up data for the process
 and rules to calculate pricing. Furthermore, there are several tasks that can be activated to evaluate pricing and to review the
