@@ -1,8 +1,7 @@
 App Dev Cloud with JBoss Travel Agency Demo
 ===========================================
-This demo is to install JBoss BPM Travel Agency Demo in the Cloud based on leveraging the Red Hat 
-Container Development Kit (CDK) and the provided OpenShift Enterprise (OSE) image. 
-It delivers a fully functioning JBoss BPM Travel Agency example containerized on OSE.
+This demo is to install JBoss BPM Travel Agency Demo in the Cloud based on leveraging the Red Hat Container Development Kit (CDK) 
+and the provided OpenShift Enterprise (OSE) image. It delivers a fully functioning JBoss BPM Travel Agency example containerized on OSE.
 
 This is an online employee travel booking process project. It contains multiple web services for looking up data for the process
 and rules to calculate pricing. Furthermore, there are several tasks that can be activated to evaluate pricing and to review the
@@ -120,6 +119,9 @@ See the tagged releases for the following versions of the product:
 - v1.1 - JBoss BPM Suite 6.2.0-BZ-1299002 on JBoss EAP 6.4.4 with travel agency process updates installed on Red Hat CDK using OpenShift Enterprise image. 
 
 - v1.0 - JBoss BPM Suite 6.2.0-BZ-1299002 on JBoss EAP 6.4.4 with travel agency installed on Red Hat CDK using OpenShift Enterprise image. 
+
+
+[![Install video](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/rhcs-travel-agency-video.png?raw=true)](https://vimeo.com/ericschabell/rhcs-travel-agency-demo)
 
 ![OSE Pod](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/rhcs-travel-agency-pod.png?raw=true)
 
