@@ -141,12 +141,3 @@ See the tagged releases for the following versions of the product:
 
 ![Started Process](https://raw.githubusercontent.com/redhatdemocentral/rhcs-travel-agency-demo/master/docs/demo-images/started-process.png)
 
-[![Video part 1](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-1.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-1)
-
-[![Video part 2](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-2.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-2)
-
-[![Video part 3](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-3.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-3)
-
-[![Video part 3](https://github.com/redhatdemocentral/rhcs-travel-agency-demo/blob/master/docs/demo-images/video-part-4.png?raw=true)](http://vimeo.com/ericschabell/rhcs-travel-agency-part-4)
-
-
