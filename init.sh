@@ -6,9 +6,9 @@ PROJECT="git@github.com:redhatdemocentral/rhcs-travel-agency-demo.git"
 SRC_DIR=./installs
 OPENSHIFT_USER=openshift-dev
 OPENSHIFT_PWD=devel
-BPMS=jboss-bpmsuite-installer-6.2.0.BZ-1299002.jar
+BPMS=jboss-bpmsuite-6.3.0.GA-installer.jar
 EAP=jboss-eap-6.4.0-installer.jar
-EAP_PATCH=jboss-eap-6.4.4-patch.zip
+EAP_PATCH=jboss-eap-6.4.7-patch.zip
 
 # wipe screen.
 clear 
@@ -103,6 +103,9 @@ if [ $? -ne 0 ]; then
 	exit
 fi
 												
+# need to wait a bit for new build to finish with developer image.
+sleep 3 
+
 echo
 echo "Importing developer image..."
 echo
@@ -117,7 +120,7 @@ fi
 echo
 echo "Starting a build, this takes some time to upload all of the product sources for build..."
 echo
-oc start-build rhcs-travel-agency-demo --from-dir=. --follow=true
+oc start-build rhcs-travel-agency-demo --from-dir=. --follow=true --wait=true
 																		
 if [ $? -ne 0 ]; then
 	echo
