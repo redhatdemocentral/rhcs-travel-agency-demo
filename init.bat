@@ -9,9 +9,9 @@ set PROJECT=git@github.com:redhatdemocentral/rhcs-travel-agency-demo.git
 set SRC_DIR=%PROJECT_HOME%installs
 set OPENSHIFT_USER=openshift-dev
 set OPENSHIFT_PWD=devel
-set BPMS=jboss-bpmsuite-6.3.0.GA-installer.jar
-set EAP=jboss-eap-6.4.0-installer.jar
-set EAP_PATCH=jboss-eap-6.4.7-patch.zip
+set HOST_IP=10.1.2.2
+set BPMS=jboss-bpmsuite-6.4.0.GA-deployable-eap7.x.zip
+set EAP=jboss-eap-7.0.0-installer.jar
 
 REM wipe screen.
 cls
@@ -28,11 +28,11 @@ echo ##     ####  ####  #  #  #     ##  #   #   #     #   ###       ##
 echo ##     #   # #     #     #       # #   #   #     #   #         ##
 echo ##     ####  #     #     #    ###  ##### #####   #   #####     ##
 echo ##                                                             ##   
-echo ##                       ###   #### #####                      ##
-echo ##                  #   #   # #     #                          ##
-echo ##                 ###  #   #  ###  ###                        ##
-echo ##                  #   #   #     # #                          ##
-echo ##                       ###  ####  #####                      ##
+echo ##             #### #      ###  #   # ####                     ##
+echo ##        #   #     #     #   # #   # #   #                    ##
+echo ##       ###  #     #     #   # #   # #   #                    ##
+echo ##        #   #     #     #   # #   # #   #                    ##
+echo ##             #### #####  ###   ###  ####                     ##
 echo ##                                                             ##   
 echo ##  brought to you by,                                         ##   
 echo ##                     %AUTHORS%           ##
@@ -42,6 +42,32 @@ echo ##  %PROJECT%##
 echo ##                                                             ##   
 echo #################################################################
 echo.
+
+REM Validate OpenShift
+set argTotal=0
+
+for %%i in (%*) do set /A argTotal+=1
+
+if %argTotal% EQU 1 (
+
+    call :validateIP %1 valid_ip
+
+	if !valid_ip! EQU 0 (
+	    echo OpenShift host given is a valid IP...
+	    set HOST_IP=%1
+		echo.
+		echo Proceeding with OpenShift host: !HOST_IP!...
+	) else (
+		echo Please provide a valid IP that points to an OpenShift installation...
+		echo.
+        GOTO :printDocs
+	)
+
+)
+
+if %argTotal% GTR 1 (
+    GOTO :printDocs
+)
 
 REM make some checks first before proceeding.	
 call where oc >nul 2>&1
@@ -55,17 +81,7 @@ if exist %SRC_DIR%\%EAP% (
         echo Product sources are present...
         echo.
 ) else (
-        echo Need to download %EAP% package from the Customer Support Portal
-        echo and place it in the %SRC_DIR% directory to proceed...
-        echo.
-        GOTO :EOF
-)
-
-if exist %SRC_DIR%\%EAP_PATCH% (
-        echo Product patches are present...
-        echo.
-) else (
-        echo Need to download %EAP_PATCH% package from the Customer Support Portal
+        echo Need to download %EAP% package from http://developers.redhat.com
         echo and place it in the %SRC_DIR% directory to proceed...
         echo.
         GOTO :EOF
@@ -75,7 +91,7 @@ if exist %SRC_DIR%\%BPMS% (
         echo Product sources are present...
         echo.
 ) else (
-        echo Need to download %BPMS% package from the Customer Support Portal
+        echo Need to download %BPMS% package from http://developers.redhat.com
         echo and place it in the %SRC_DIR% directory to proceed...
         echo.
         GOTO :EOF
@@ -83,9 +99,9 @@ if exist %SRC_DIR%\%BPMS% (
 
 echo OpenShift commandline tooling is installed...
 echo.
-echo Logging into OSE as %OPENSHIFT_USER%...
+echo Logging into OpenShift as %OPENSHIFT_USER%...
 echo.
-call oc login 10.1.2.2:8443 --password="%OPENSHIFT_PWD%" --username="%OPENSHIFT_USER%"
+call oc login %HOST_IP%:8443 --password="%OPENSHIFT_PWD%" --username="%OPENSHIFT_USER%"
 
 if not "%ERRORLEVEL%" == "0" (
   echo.
@@ -112,7 +128,7 @@ if not "%ERRORLEVEL%" == "0" (
 )
 
 REM need to wait a bit for new build to finish with developer image.
-timeout 3 /nobreak
+timeout 10 /nobreak
 
 echo.
 echo Importing developer image...
@@ -153,7 +169,7 @@ if not "%ERRORLEVEL%" == "0" (
 echo.
 echo Creating an externally facing route by exposing a service...
 echo.
-call oc expose service rhcs-travel-agency-demo --hostname=rhcs-travel-agency-demo.10.1.2.2.xip.io
+call oc expose service rhcs-travel-agency-demo --hostname=rhcs-travel-agency-demo.%HOST_IP%.xip.io
 
 if not "%ERRORLEVEL%" == "0" (
   echo.
@@ -167,14 +183,14 @@ echo ===========================================================================
 echo =                                                                                =
 echo =  Login to start exploring the Travel Agency project:                           =
 echo =                                                                                =
-echo =    http://rhcs-travel-agency-demo.10.1.2.2.xip.io/business-central             =
+echo =    http://rhcs-travel-agency-demo.%HOST_IP%.xip.io/business-central             =
 echo =                                                                                =
 echo =    [ u:erics / p:jbossbrms1! ]                                                 =
 echo =                                                                                =
 echo =                                                                                =
 echo =  Access the Cool Store web shopping cart at:                                   =
 echo =                                                                                =
-echo =    http://rhcs-travel-agency-demo.10.1.2.2.xip.io/external-client-ui-form-1.0  =
+echo =    http://rhcs-travel-agency-demo.%HOST_IP%.xip.io/external-client-ui-form-1.0  =
 echo =                                                                                =
 echo =                                                                                =
 echo =  Note: it takes a few minutes to expose the service...                         =

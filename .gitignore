@@ -10,3 +10,4 @@ repository/
 .project
 .classpath
 *.jar
+Dockerfile
