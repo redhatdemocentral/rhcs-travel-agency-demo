@@ -170,3 +170,5 @@ See the tagged releases for the following versions of the product:
 
 ![Started Process](https://raw.githubusercontent.com/redhatdemocentral/rhcs-travel-agency-demo/master/docs/demo-images/started-process.png)
 
+![Cloud Suite](https://raw.githubusercontent.com/redhatdemocentral/rhcs-travel-agency-demo/master/docs/demo-images/rhcs-arch.png)
+
