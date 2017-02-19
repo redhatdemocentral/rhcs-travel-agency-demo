@@ -78,23 +78,23 @@ if  %ERRORLEVEL% NEQ 0 (
 )
 
 if exist %SRC_DIR%\%EAP% (
-        echo Product sources are present...
-        echo.
+  echo Product EAP sources are present...
+  echo.
 ) else (
-        echo Need to download %EAP% package from http://developers.redhat.com
-        echo and place it in the %SRC_DIR% directory to proceed...
-        echo.
-        GOTO :EOF
+  echo Need to download %EAP% package from http://developers.redhat.com
+  echo and place it in the %SRC_DIR% directory to proceed...
+  echo.
+  GOTO :EOF
 )
 
 if exist %SRC_DIR%\%BPMS% (
-        echo Product sources are present...
-        echo.
+  echo Product BPM Suite sources are present...
+  echo.
 ) else (
-        echo Need to download %BPMS% package from http://developers.redhat.com
-        echo and place it in the %SRC_DIR% directory to proceed...
-        echo.
-        GOTO :EOF
+  echo Need to download %BPMS% package from http://developers.redhat.com
+  echo and place it in the %SRC_DIR% directory to proceed...
+  echo.
+  GOTO :EOF
 )
 
 echo OpenShift commandline tooling is installed...
@@ -113,7 +113,7 @@ if not "%ERRORLEVEL%" == "0" (
 echo.
 echo Creating a new project...
 echo.
-call oc new-project rhcs-travel-agency-demo 
+call oc new-project app-dev-on-cloud-suite
 
 echo.
 echo Setting up a new build...
@@ -197,4 +197,33 @@ echo =  Note: it takes a few minutes to expose the service...                   
 echo =                                                                                =
 echo ==================================================================================
 echo.
+
+GOTO :EOF
+      
+
+:validateIP ipAddress [returnVariable]
+
+    setlocal 
+
+    set "_return=1"
+
+    echo %~1^| findstr /b /e /r "[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*" >nul
+
+    if not errorlevel 1 for /f "tokens=1-4 delims=." %%a in ("%~1") do (
+        if %%a gtr 0 if %%a lss 255 if %%b leq 255 if %%c leq 255 if %%d gtr 0 if %%d leq 254 set "_return=0"
+    )
+
+:endValidateIP
+
+    endlocal & ( if not "%~2"=="" set "%~2=%_return%" ) & exit /b %_return%
+	
+:printDocs
+  echo This project can be installed on any OpenShift platform, such as OpenShift
+  echo Container Platform. It's possible to install it on any available installation 
+  echo by pointing this installer to an OpenShift IP address:
+  echo.
+  echo   $ ./init.sh IP
+  echo.
+  echo If using Red Hat OCP, IP should look like: 192.168.99.100
+  echo.
 

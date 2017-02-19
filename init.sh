@@ -14,14 +14,12 @@ EAP=jboss-eap-7.0.0-installer.jar
 # prints the documentation for this script.
 function print_docs() 
 {
-	echo "This project can be installed on any OpenShift platform, such as the Red Hat"
-	echo "Container Development Kit (CDK) or OpenShift Container Platform (OCP). It is"
-	echo "possible to install it on any available installation, just point this installer"
-	echo "at your installation by passing an IP of your OpenShift installation:"
+	echo "This project can be installed on any OpenShift platform, such as the OpenShift"
+  echo "Container Platform (OCP). It is possible to install it on any available installation,"
+  echo "just point this installer at your installation by passing an IP of your OpenShift"
+  echo "installation:"
 	echo
 	echo "   $ ./init.sh IP"
-	echo
-	echo "If using Red Hat CDK, IP should look like: 10.1.2.2"
 	echo 
 	echo "If using Red Hat OCP, IP should look like: 192.168.99.100"
 	echo
@@ -102,23 +100,12 @@ else
 	exit
 fi
 
-# determine the container build file to use.
-if [ $HOST_IP == "10.1.2.2" ]; then
-	echo "Setting container build to target Red Hat CDK..."
-	echo
-	cp -f $SUPPORT_DIR/Dockerfile-CDK ./Dockerfile
-else
-	echo "Setting container build to target Red Hat OCP..."
-	echo
-	cp -f $SUPPORT_DIR/Dockerfile-OCP ./Dockerfile
-fi
-
 # make some checks first before proceeding.	
 command -v oc -v >/dev/null 2>&1 || { echo >&2 "OpenShift command line tooling is required but not installed yet... download here: https://access.redhat.com/downloads/content/290"; exit 1; }
 
 # make some checks first before proceeding.	
 if [ -r $SRC_DIR/$EAP ] || [ -L $SRC_DIR/$EAP ]; then
-	echo Product sources are present...
+	echo Product EAP sources are present...
 	echo
 else
 	echo Need to download $EAP package from http://developers.redhat.com
@@ -128,7 +115,7 @@ else
 fi
 
 if [ -r $SRC_DIR/$BPMS ] || [ -L $SRC_DIR/$BPMS ]; then
-		echo Product sources are present...
+		echo Product BPM Suite sources are present...
 		echo
 else
 		echo Need to download $BPMS package from http://developers.redhat.com
@@ -152,7 +139,7 @@ fi
 echo
 echo "Creating a new project..."
 echo
-oc new-project rhcs-travel-agency-demo 
+oc new-project app-dev-on-cloud-suite
 						
 echo
 echo "Setting up a new build..."
