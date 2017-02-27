@@ -65,7 +65,7 @@ RUN mvn clean install -f /opt/jboss/bpms-projects/pom.xml \
 USER 1000
 
 # Expose Ports
-EXPOSE 9990 9999 8080
+EXPOSE 9990 9999 8080 9418 8001
 
 # Helper script
 ENTRYPOINT ["/opt/jboss/start.sh"]
