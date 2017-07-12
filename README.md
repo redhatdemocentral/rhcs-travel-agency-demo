@@ -34,6 +34,8 @@ Log in to JBoss Travel Agency to start exploring an online bookings application 
 
   - OCP example web app: [http://rhcs-travel-agency-demo.192.168.99.100.xip.io/external-client-ui-form-1.0](http://rhcs-travel-agency-demo.192.168.99.100.xip.io/external-client-ui-form-1.0)
 
+5. Want to build the Travel Agency demo from scratch? Try this hands-on <a href="https://bpmworkshop.github.io/travelagency-bpmworkshop/index.html" target="_blank">online workshop</a>.
+
 
 Note before running demo:
 -------------------------
@@ -160,6 +162,8 @@ Supporting Articles
 Released versions
 -----------------
 See the tagged releases for the following versions of the product:
+
+- v1.6 - JBoss BPM Suite 6.4.0 and JBoss EAP 7.0.0 with travel agency installed on any given OpenShift installation and loading mulitple projects.
 
 - v1.5 - JBoss BPM Suite 6.4.0 and JBoss EAP 7.0.0 with travel agency installed on any given OpenShift installation and port forwarding for git repo access configured.
 
