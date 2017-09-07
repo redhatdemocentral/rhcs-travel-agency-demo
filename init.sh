@@ -214,7 +214,7 @@ echo "=  Login to start exploring the Travel Agency project:                    
 echo "=                                                                                ="
 echo "=    http://$OCP_APP.$HOST_IP.xip.io/business-central             ="
 echo "=                                                                                ="
-echo "=    [ u:erics / p:jbossbpm1! ]                                                  ="
+echo "=    [ u:erics / p:bpmsuite1! ]                                                  ="
 echo "=                                                                                ="
 echo "=                                                                                ="
 echo "=  Access the online Travel Agnecy booking web application at:                   ="
