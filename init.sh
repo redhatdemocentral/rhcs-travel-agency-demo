@@ -12,6 +12,7 @@ EAP=jboss-eap-7.0.0-installer.jar
 OPENSHIFT_USER=openshift-dev
 OPENSHIFT_PWD=devel
 HOST_IP=yourhost.com
+OCP_DESCRIPTION="Cloud Travel Bookings"
 OCP_PRJ=appdev-in-cloud
 OCP_APP=rhcs-travel-agency-demo
 
@@ -144,7 +145,7 @@ fi
 echo
 echo "Creating a new project..."
 echo
-oc new-project "$OCP_PRJ"
+oc new-project "$OCP_PRJ" --display-name="$OCP_DESCRIPTION" --description="Cloud JBoss Travel Agency showcasing process driven travel bookings system."
 						
 echo
 echo "Setting up a new build..."

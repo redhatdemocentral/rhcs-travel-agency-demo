@@ -14,6 +14,7 @@ REM Adjust these variables to point to an OCP instance.
 set OPENSHIFT_USER=openshift-dev
 set OPENSHIFT_PWD=devel
 set HOST_IP=192.168.99.100
+set OCP_DESCRIPTION=Cloud Travel Bookings
 set OCP_PRJ=appdev-in-cloud
 set OCP_APP=rhcs-travel-agency-demo
 
@@ -117,7 +118,7 @@ if not "%ERRORLEVEL%" == "0" (
 echo.
 echo Creating a new project...
 echo.
-call oc new-project %OCP_PRJ%
+call oc new-project %OCP_PRJ% --display-name=%OCP_DESCRIPTION% --description="Cloud JBoss Travel Agency showcasing process driven travel bookings system."
 
 echo.
 echo Setting up a new build...
