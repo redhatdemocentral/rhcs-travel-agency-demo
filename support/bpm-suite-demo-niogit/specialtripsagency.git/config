@@ -1,8 +1,13 @@
 [core]
+	symlinks = false
 	repositoryformatversion = 0
 	filemode = true
 	bare = true
-	ignorecase = true
+	logallrefupdates = false
 	precomposeunicode = true
 [remote "origin"]
-	url = /Users/erics/demo-projects/bpmsuite/bpms-travel-agency-demo/target/temp/bpms-specialtripsagency.git
+	url = https://github.com/jbossdemocentral/bpms-travel-agency-demo-repo
+	fetch = +refs/heads/*:refs/heads/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
