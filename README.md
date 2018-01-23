@@ -150,6 +150,8 @@ Booking a trip to Edinburgh (just one scenario)
 
 Supporting Articles
 -------------------
+- [AppDev in the Cloud - Data Virtualization Solves Acquisition Use Case](http://www.schabell.org/2018/01/appdev-cloud-datavirt-solves-acquistion-use-case.html)
+
 - [Holiday Homework - Red Hat Cloud demo updates](http://www.schabell.org/2016/12/holiday-homework-redhat-cloud-demo-updates.html)
 
 - [How to help the travel industry take bookings into the Cloud](http://www.schabell.org/2016/04/how-to-help-travel-industry-take-bookings-into-cloud.html)
