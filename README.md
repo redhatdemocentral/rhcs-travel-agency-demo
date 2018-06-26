@@ -1,3 +1,6 @@
+Update: June 2018 moved to [Gitlab](https://gitlab.com/redhatdemocentral/rhcs-travel-agency-demo).
+
+
 App Dev Cloud with JBoss Travel Agency Demo
 ===========================================
 This demo is to install JBoss BPM Travel Agency Demo in the Cloud based on the OpenShift Container Platform (OCP)
